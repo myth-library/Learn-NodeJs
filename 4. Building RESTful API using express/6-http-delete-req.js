@@ -30,6 +30,4 @@ app.delete('/api/courses/:id', (req, res) => {
 // ==================================================
 
 const port = process.env.PORT || 5001;
-app.listen(port);
-
-console.log(`Server start on port ${port}...`);
+app.listen(port, () => console.log(`Server start on port ${port}...`));
