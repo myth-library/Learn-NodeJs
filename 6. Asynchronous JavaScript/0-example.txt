@@ -1,0 +1,14 @@
++ synchronous/blocking restaurants
+      - waiter customerගේ order එක සටහන් කර ගන්නවා
+      - kitchen එකට ගිහින් cutomerගේ order එක හදලා ඉවර වෙනකන් ඉන්නවා
+      - order එක customerට ගිහින් දෙනවා
+      - next table එකේ customer ගාවට යනවා
+
++ asynchronous/non-blocking restaurants
+      - waiter customerගේ order එක සටහන් කර ගන්නවා
+      - chef order එක පිළියෙල කරනකන් ඉන්නෙ නැතුව අනෙක් table එකේ customersලාගේ orders සටහන් කර ගන්නවා
+      - prepare කරලා ඉවර වෙන orders අදාල customersලාට ගිහින් දෙනවා
+
+
+benefits of asynchronous programming:
+      - එක thread එකක් ප්‍රමාණවත් task complete කරන්න
