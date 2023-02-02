@@ -1,0 +1,16 @@
+1. create sperate module/file for seperate routes
+      eg: '/api/courses' ==> create module called 'courses' inside 'routes' folder
+
+2. cut and paste all related routes in to that folder
+
+3. + using router object instead of app object
+   + replacing the 'app' keyword with the 'router'
+   + export router object
+
+4. loading seperated routes into index.js(main file)
+      inside 'index.js' =>  const courses = require('./routes/courses')
+                            app.use('/api/courses', courses);
+
+5. remove routes path of separated routes modules
+      eg: before => routes.get('/api/courses/:id')
+          now    => routes.get('/:id)
